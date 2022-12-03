@@ -93,6 +93,13 @@ Other explanation: [https://askubuntu.com/questions/130186/what-is-the-rationale
 * `/lib → /usr/lib`: Libraries for the binaries in `/usr/bin` and `/usr/sbin`
 * `/usr/include`: Standard [include files](https://en.wikipedia.org/wiki/Include_directive)
 * `/usr/share`: Architecture-independent (shared) data
+
+Example:
+```
+└─$ whereis aircrack-ng
+aircrack-ng: /usr/bin/aircrack-ng /usr/include/aircrack-ng /usr/share/man/man1/aircrack-ng.1.gz
+```
+
 ---
 * `/boot`: Boot loader files (kernel image, initrd)
 * `/proc`: Virtual filesystem providing process and kernel information as files. In Linux, corresponds to a procfs mount. Generally, automatically generated and populated by the system, on the fly. 

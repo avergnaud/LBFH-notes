@@ -89,29 +89,31 @@ Other explanation: [https://askubuntu.com/questions/130186/what-is-the-rationale
 [https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
 * `/usr`: all system-wide (shareable), read-only user data; contains the majority of (multi-)user utilities and applications
-
+---
 * `/bin → /usr/bin`: command binaries
 * `/sbin → /usr/sbin`: "Essential system binaries". Commands that can only be (or are only meaningful when) executed by the root user, like mount, fdisk, [daemons](https://en.wikipedia.org/wiki/Daemon_(computing)) for various [network services](https://en.wikipedia.org/wiki/Network_service)
 * `/lib → /usr/lib`: Libraries for the binaries in `/usr/bin` and `/usr/sbin`
 * `/usr/include`: Standard [include files](https://en.wikipedia.org/wiki/Include_directive)
 * `/usr/share`: Architecture-independent (shared) data
-
+---
 * `/boot`: Boot loader files (kernel image, initrd)
 * `/proc`: Virtual filesystem providing process and kernel information as files. In Linux, corresponds to a procfs mount. Generally, automatically generated and populated by the system, on the fly. 
 * `/sys`: Kernel's view of the hardware. Contains information about devices, drivers, and some kernel features
-
+---
 * `/opt`: "Add-on application software packages". An atrocity meant for system-wide, read-only and self-contained software. That is, software that does not split their files over `bin`, `lib`, `share`, `include` like well-behaved software should
-
+---
 * `/etc`: Host-specific system-wide configuration files. Files that control when and how programs start up. (In early versions of the UNIX Implementation Document from Bell labs, /etc is referred to as the etcetera directory, as this directory historically held everything that did not belong elsewhere (however, the FHS restricts /etc to static configuration files and may not contain binaries). Since the publication of early documentation, the directory name has been re-explained in various ways. Recent interpretations include backronyms such as "Editable Text Configuration" or "Extended Tool Chest")
-
+---
 * `/var`: Variable files: files whose content is expected to continually change during normal operation of the system, such as logs, spool files, and temporary e-mail files. 
 * `/var/log`: Log files. Various logs. 
 * `/var/lib`: State information. Persistent data modified by programs as they run (e.g., databases, packaging system metadata, etc.). 
-
+---
 * `/dev`: directory contains special files (device files) corresponding to physical devices or system components, as things you wouldn't normally think of as devices such as [/dev/null](https://en.wikipedia.org/wiki/Null_device).
 * `/media`: "Mount points for removable media", where CDs and USB devices are usually mounted to the filesystems
 * `/mnt`: "Temporarily mounted filesystems". Used to mount other filesystems, usually for a short period of time
-
+---
 * `/root`: Home directory for the root user. 
 * `/home`: Home directories for other users. Containing saved files, personal settings, etc. 
 * `/tmp`: Directory for temporary files (see also /var/tmp). Often not preserved between system reboots and may be severely size-restricted. 
+
+## next

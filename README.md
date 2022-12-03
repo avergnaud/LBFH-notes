@@ -82,9 +82,7 @@ On Kali Linux, the `mount` command can be located is the `/usr/bin` directory, w
 
 Other explanation: [https://askubuntu.com/questions/130186/what-is-the-rationale-for-the-usr-directory](https://askubuntu.com/questions/130186/what-is-the-rationale-for-the-usr-directory)
 
-[https://unix.stackexchange.com/questions/309706/what-is-the-difference-between-dev-media-and-mnt](https://unix.stackexchange.com/questions/309706/what-is-the-difference-between-dev-media-and-mnt)
-
-[https://unix.stackexchange.com/questions/13975/mounting-a-device-role-of-dev-media-and-mnt-and-the-mount-command](https://unix.stackexchange.com/questions/13975/mounting-a-device-role-of-dev-media-and-mnt-and-the-mount-command)
+### Filesystem Hierarchy Standard and Kali
 
 [https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
@@ -111,6 +109,11 @@ Other explanation: [https://askubuntu.com/questions/130186/what-is-the-rationale
 * `/dev`: directory contains special files (device files) corresponding to physical devices or system components, as things you wouldn't normally think of as devices such as [/dev/null](https://en.wikipedia.org/wiki/Null_device).
 * `/media`: "Mount points for removable media", where CDs and USB devices are usually mounted to the filesystems
 * `/mnt`: "Temporarily mounted filesystems". Used to mount other filesystems, usually for a short period of time
+
+[https://unix.stackexchange.com/questions/309706/what-is-the-difference-between-dev-media-and-mnt](https://unix.stackexchange.com/questions/309706/what-is-the-difference-between-dev-media-and-mnt)
+
+[https://unix.stackexchange.com/questions/13975/mounting-a-device-role-of-dev-media-and-mnt-and-the-mount-command](https://unix.stackexchange.com/questions/13975/mounting-a-device-role-of-dev-media-and-mnt-and-the-mount-command)
+
 ---
 * `/root`: Home directory for the root user. 
 * `/home`: Home directories for other users. Containing saved files, personal settings, etc. 

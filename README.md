@@ -126,4 +126,8 @@ aircrack-ng: /usr/bin/aircrack-ng /usr/include/aircrack-ng /usr/share/man/man1/a
 * `/home`: Home directories for other users. Containing saved files, personal settings, etc. 
 * `/tmp`: Directory for temporary files (see also /var/tmp). Often not preserved between system reboots and may be severely size-restricted. 
 
-## next
+## page 23 - challenge using `nl` and `grep`
+
+```
+sudo nl /etc/snort/snort.conf | grep -B 5 '# Step #6: Configure'
+```

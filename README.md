@@ -135,9 +135,17 @@ sudo nl /etc/snort/snort.conf | grep -B 5 '# Step #6: Configure'
 ## page34 - dig
 
 ### A
-get the IP addresses of cat-amania.com:
+get the IP v4 addresses of cat-amania.com:
 ```
 dig cat-amania.com A +noall +answer
+```
+
+### AAAA
+get the IP v6 addresses of google.com:
+```
+dig google.com AAAA +noall +answer
+
+google.com.             132     IN      AAAA    2a00:1450:4007:80d::200e
 ```
 
 ### MX
@@ -150,10 +158,7 @@ dig cat-amania.com MX +noall +answer
 get a list of authoritative DNS servers for cat-amania.com:
 ```
 dig cat-amania.com NS +noall +answer
-```
 
-This command returns:
-```
 cat-amania.com.         10800   IN      NS      ns-146-a.gandi.net.
 cat-amania.com.         10800   IN      NS      ns-102-c.gandi.net.
 cat-amania.com.         10800   IN      NS      ns-206-b.gandi.net.

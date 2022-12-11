@@ -134,6 +134,8 @@ sudo nl /etc/snort/snort.conf | grep -B 5 '# Step #6: Configure'
 
 ## page34 - dig (Domain Information Groper)
 
+[https://domainsdirect.nz/articles/what-are-a-cname-mx-txt-records](https://domainsdirect.nz/articles/what-are-a-cname-mx-txt-records)
+
 ### A
 get the IP v4 addresses of cat-amania.com:
 ```

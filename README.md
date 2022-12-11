@@ -132,6 +132,10 @@ aircrack-ng: /usr/bin/aircrack-ng /usr/include/aircrack-ng /usr/share/man/man1/a
 sudo nl /etc/snort/snort.conf | grep -B 5 '# Step #6: Configure'
 ```
 
+## page 30 - analysing network
+
+![old new linux commands](./assets/old_new_linux_commands.jpeg?raw=true)
+
 ## page34 - dig (Domain Information Groper)
 
 [https://domainsdirect.nz/articles/what-are-a-cname-mx-txt-records](https://domainsdirect.nz/articles/what-are-a-cname-mx-txt-records)
@@ -176,3 +180,9 @@ get a list of text annotations for cat-amania.com:
 ```
 dig cat-amania.com TXT +noall +answer
 ```
+
+Example of TXT DNS record: SPF Sender Policy Framework.
+
+[https://www.youtube.com/watch?v=oEpU-iqBerI](https://www.youtube.com/watch?v=oEpU-iqBerI)
+
+![SPF schema](./assets/spf.jpg)

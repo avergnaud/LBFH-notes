@@ -131,3 +131,41 @@ aircrack-ng: /usr/bin/aircrack-ng /usr/include/aircrack-ng /usr/share/man/man1/a
 ```
 sudo nl /etc/snort/snort.conf | grep -B 5 '# Step #6: Configure'
 ```
+
+## page34 - dig
+
+### A
+get the IP addresses of cat-amania.com:
+```
+dig cat-amania.com A +noall +answer
+```
+
+### MX
+get the mailservers of cat-amania.com:
+```
+dig cat-amania.com MX +noall +answer
+```
+
+### NS
+get a list of authoritative DNS servers for cat-amania.com:
+```
+dig cat-amania.com NS +noall +answer
+```
+
+This command returns:
+```
+cat-amania.com.         10800   IN      NS      ns-146-a.gandi.net.
+cat-amania.com.         10800   IN      NS      ns-102-c.gandi.net.
+cat-amania.com.         10800   IN      NS      ns-206-b.gandi.net.
+```
+
+We can then use dig to query using a specific nameserver:
+```
+dig @ns-206-b.gandi.net cat-amania.com
+```
+
+### TXT
+get a list of text annotations for cat-amania.com:
+```
+dig cat-amania.com TXT +noall +answer
+```

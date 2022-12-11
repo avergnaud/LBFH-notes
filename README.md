@@ -132,7 +132,7 @@ aircrack-ng: /usr/bin/aircrack-ng /usr/include/aircrack-ng /usr/share/man/man1/a
 sudo nl /etc/snort/snort.conf | grep -B 5 '# Step #6: Configure'
 ```
 
-## page34 - dig
+## page34 - dig (Domain Information Groper)
 
 ### A
 get the IP v4 addresses of cat-amania.com:

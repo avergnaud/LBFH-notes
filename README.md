@@ -186,3 +186,22 @@ Example of TXT DNS record: SPF Sender Policy Framework.
 [https://www.youtube.com/watch?v=oEpU-iqBerI](https://www.youtube.com/watch?v=oEpU-iqBerI)
 
 ![SPF schema](./assets/spf.jpg)
+
+## page 37 - exercices
+
+Changing the eth0 MAC address:
+```
+sudo ifconfig eth0 hw ether 04:3b:c8:a1:58:ad
+```
+
+Some MAC address values are not allowed. One can only set unicast address values.
+
+[https://en.wikipedia.org/wiki/Multicast_address#Ethernet](https://en.wikipedia.org/wiki/Multicast_address#Ethernet) "Ethernet frames with a value of 1 in the least-significant bit of the first octet of the destination MAC address are treated as multicast frames and are flooded to all points on the network"
+
+![MAC address structure](./assets/912px-MAC-48_Address.svg.png)
+
+If we try to change eth0 MAC address with a multicast value, we get an error:
+```
+sudo ifconfig eth0 hw ether 05:3b:c8:a1:58:ad
+SIOCSIFHWADDR: Ne peut attribuer l'adresse demandée
+```

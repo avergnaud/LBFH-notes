@@ -198,7 +198,7 @@ Some MAC address values are not allowed. One can only set unicast address values
 
 [https://en.wikipedia.org/wiki/Multicast_address#Ethernet](https://en.wikipedia.org/wiki/Multicast_address#Ethernet) "Ethernet frames with a value of 1 in the least-significant bit of the first octet of the destination MAC address are treated as multicast frames and are flooded to all points on the network"
 
-![MAC address structure](./assets/912px-MAC-48_Address.svg.png)
+
 
 If we try to change eth0 MAC address with a multicast value, we get an error:
 ```

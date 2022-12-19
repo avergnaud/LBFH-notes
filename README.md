@@ -181,6 +181,11 @@ get a list of text annotations for cat-amania.com:
 dig cat-amania.com TXT +noall +answer
 ```
 
+Using Windows Powershell:
+```
+nslookup -q=TXT cat-amania.com
+```
+
 Example of TXT DNS record: SPF Sender Policy Framework.
 
 [https://www.youtube.com/watch?v=oEpU-iqBerI](https://www.youtube.com/watch?v=oEpU-iqBerI)

@@ -210,3 +210,23 @@ If we try to change eth0 MAC address with a multicast value, we get an error:
 sudo ifconfig eth0 hw ether 05:3b:c8:a1:58:ad
 SIOCSIFHWADDR: Ne peut attribuer l'adresse demandée
 ```
+
+## page 40 - apt, apt-get, apt-cache
+
+[https://itsfoss.com/apt-vs-apt-get-difference/](https://itsfoss.com/apt-vs-apt-get-difference/) "apt=most common used command options from apt-get and apt-cache. apt is a subset of apt-get and apt-cache commands providing necessary commands for package management."
+
+One way to remove a package is:
+```
+apt --dry-run --purge autoremove <package>
+```
+then
+```
+apt --purge autoremove <package>
+```
+
+One way to upgrade is:
+```
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+```
